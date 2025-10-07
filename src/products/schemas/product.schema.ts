@@ -11,11 +11,16 @@ export class Product {
   @Prop({ default: 0 })
   productPrice: number;
 
-
   @Prop({ default: '' })
   productDetail: string;
 
   @Prop({ default: 0 })
   productStock: number;
+  
+  @Prop({ default: true })
+  Availability: boolean;
+
+  @Prop({ default: '' })
+  productImage: string;
 }
 export const ProductSchema = SchemaFactory.createForClass(Product);
